@@ -2,5 +2,9 @@
 !/.gitignore
 !/dotfile-notes
 !/dotfile-notes/*
-!/.vimrc
 
+!/.vim
+!/.vim/*
+
+
+!/.vimrc

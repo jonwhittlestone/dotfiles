@@ -1,3 +1,8 @@
+
+set nocompatible              						"We want the latest Vim settings/options.
+
+so ~/.vim/plugins.vim
+
 syntax enable
 colorscheme atom-dark-256
 
@@ -31,6 +36,9 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "Add simple highlight removal.
 nmap <Leader><space> :nohlsearch<cr>
 
+"Make NERDTree easier to toggle
+"Make NERDTree easier to toggle.
+nmap <Leader>1 :NERDTreeToggle<cr>
 
 
 
