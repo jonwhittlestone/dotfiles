@@ -12,6 +12,8 @@ colorscheme atom-dark-256
 set number
 set linespace=15
 set t_CO=256
+set guioptions-=e
+
 
 "-------------General Settings--------------"
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
