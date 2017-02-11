@@ -52,7 +52,6 @@ nmap <Leader><space> :nohlsearch<cr>
 nmap <Leader>1 :NERDTreeToggle<cr>
 
 
-
 "-------------Auto-Commands--------------"
 
 "Automatically source the Vimrc file on save.
@@ -60,3 +59,16 @@ augroup autosourcing
 	autocmd!
 	autocmd BufWritePost .vimrc source %
 augroup END
+
+"-------------Plugins--------------"
+
+"/
+""/ CtrlP
+"/
+let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+"
+nmap <C-r> :CtrlPBufTag<cr>
+nmap <C-e> :CtrlPMRUFiles<cr>
+nmap <C-t> <Plug>PeepOpen
+
