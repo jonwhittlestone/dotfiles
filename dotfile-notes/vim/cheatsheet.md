@@ -63,10 +63,17 @@ First install `ctags` with `brew install ctags`
 
 [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 
-
 |  Operation 	                    |  Keystroke 	            |  Comment 	                  |
 |---	                            |---	                    |---	                      | 
 |  View list of functions and variables |  `:CtrlPBufTag`   | My mapping: `CTRL` + `r`  |
 |  Most recently-used files       |  `:CtrlPMRU`   | My mapping: `CTRL` + `e`  |
 
+
+
+### 08 More tweaks
+
+|  Operation 	                    |  Keystroke 	            |  Comment 	                  |
+|---	                            |---	                    |---	                      | 
+|  New tab                        |  `:tabe`                |   	                      |
+|  Go between tabs                |  `gt`                   |   	                      |
 
