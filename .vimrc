@@ -1,12 +1,14 @@
 
 set nocompatible              						"We want the latest Vim settings/options.
+set encoding=utf-8
 
 so ~/.vim/plugins.vim
 
 syntax enable
 colorscheme atom-dark-256
-
-
+let python_highlight_all=1
+syntax on
+set clipboard=unnamed
 
 "-------------Visuals--------------"
 set number
