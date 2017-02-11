@@ -46,10 +46,27 @@
 |  View previous buffer (back)    |  `:bp`                  |   	                      |
 |  List buffers                 |  `:ls` .. `b1`            |   	                      |
 |  View buffer 4                |  `:b4`                    |   	                      |
+|  Close everything             |  `:bufdo bd!`              |   	                      |
 
 
 
 ### 06 Package Management with Vundle
 
 [Vundle](https://github.com/VundleVim/Vundle.vim)
+
 [nerdtree](https://github.com/scrooloose/nerdtree)
+
+
+### 07 Faster file switching with CTRLP
+
+First install `ctags` with `brew install ctags`
+
+[ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+
+
+|  Operation 	                    |  Keystroke 	            |  Comment 	                  |
+|---	                            |---	                    |---	                      | 
+|  View list of functions and variables |  `:CtrlPBufTag`   | My mapping: `CTRL` + `r`  |
+|  Most recently-used files       |  `:CtrlPMRU`   | My mapping: `CTRL` + `e`  |
+
+
