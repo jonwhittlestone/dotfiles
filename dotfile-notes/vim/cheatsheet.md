@@ -77,3 +77,19 @@ First install `ctags` with `brew install ctags`
 |  New tab                        |  `:tabe`                |   	                      |
 |  Go between tabs                |  `gt`                   |   	                      |
 
+
+### 09 Ctags
+
+First install `ctags` with `brew install ctags`
+
+|  Operation 	                    |  Keystroke 	            |  Comment 	                          |
+|---	                            |---	                    |---	                                | 
+|  New tags file                  |  `$ ctags -R`           |  Tip: make this before installing libraries
+Initialise by setting up a tags file and adding it to your gitignore 	                      |
+|  Find the method                |  `:tag report`          |   To find a method called `report()`|
+|  To delete inside parentheses   |  `d` + `i` + `(`        | Cursor must be inside parens  	    |
+|  To delete inside quotes        |  `d` + `i` + `"`        | Cursor must be inside quotes  	    |
+|  To change inside quotes        |  `c` + `i` + `"`        | Changes to insert mode. Cursor must be inside quotes |
+|  To select inside quotes        |  `v` + `i` + `"`        | Cursor must be inside quotes |
+|  To select all inside brace, including brace     |  `v` + `a` + `[`        | Cursor must be inside quotes |
+|  undo change                    |  `u`                    |                               	    |
