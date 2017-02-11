@@ -35,6 +35,21 @@
 |  Directory for colour scheme    |  `mkdir -p ~/.vim/colors`|   	                      |
 
 
+### 05 Window Splits
+
+|  Operation 	                    |  Keystroke 	            |  Comment 	                  |
+|---	                            |---	                    |---	                      | 
+|  Horizontal split                 |  `:sp`                  |   	                      |
+|  Vertical split                 |  `:vsp`                 |   	                      |
+|  Close a split                  |  `:q`                   |   	                      |
+|  Changing focus to split        |  `CTRL` + `w` + {direction}| Default binding        |
+|  View previous buffer (back)    |  `:bp`                  |   	                      |
+|  List buffers                 |  `:ls` .. `b1`            |   	                      |
+|  View buffer 4                |  `:b4`                    |   	                      |
+
+
+
+
 
 ### Package Management with Vundle
 
