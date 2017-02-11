@@ -9,21 +9,32 @@ colorscheme atom-dark-256
 
 
 "-------------Visuals--------------"
- 
-
+set number
+set linespace=15
+set t_CO=256
 
 "-------------General Settings--------------"
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
 let mapleader = ',' 						    	"The default leader is \, but a comma is much better.
-set number								"Let's activate line numbers.
-set linespace=15   						        "Macvim-specific line-height.
-
-
 
 
 "-------------Search--------------"
 set hlsearch
 set incsearch
+
+
+
+"-------Split Managemnent------"
+
+"set simpler mappings to switch between splits.
+set splitbelow
+set splitright
+
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
+
 
 
 
