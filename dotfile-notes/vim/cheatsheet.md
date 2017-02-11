@@ -28,6 +28,14 @@
 |  Get help on 'tab close'                     |  `:help tabclose`|   	                      |
 
 
+### 04 Prettifying Vim
+
+|  Operation 	                    |  Keystroke 	            |  Comment 	                  |
+|---	                            |---	                    |---	                      | 
+|  Directory for colour scheme    |  `mkdir -p ~/.vim/colors`|   	                      |
+
+
+
 ### Package Management with Vundle
 
 [Vundle](https://github.com/VundleVim/Vundle.vim)
