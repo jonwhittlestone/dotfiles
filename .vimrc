@@ -69,6 +69,7 @@ augroup END
 "/
 ""/ CtrlP
 "/
+
 let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 "
@@ -76,3 +77,19 @@ nmap <C-r> :CtrlPBufTag<cr>
 nmap <C-e> :CtrlPMRUFiles<cr>
 nmap <C-t> <Plug>PeepOpen
 
+
+" Powerline
+if has("gui_running")
+	   let s:uname = system("uname")
+	      	if s:uname == "Darwin\n"
+		 	set guifont=Inconsolata\ for\ Powerline:h15
+		endif
+endif
+
+
+if has("gui_running")
+	   let s:uname = system("uname")
+	      if s:uname == "Darwin\n"
+		            set guifont=Inconsolata\ for\ Powerline:h15
+			       endif
+		       endif
