@@ -52,9 +52,7 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 nmap <Leader><space> :nohlsearch<cr>
 
 "Make NERDTree easier to toggle
-"Make NERDTree easier to toggle.
 nmap <Leader>1 :NERDTreeToggle<cr>
-
 
 "-------------Auto-Commands--------------"
 
