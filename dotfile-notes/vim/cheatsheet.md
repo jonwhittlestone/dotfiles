@@ -16,7 +16,7 @@
 |  Select Line                    |  `shift` + `v`          |  Can add direction eg. `K`      |
 |  Delete                         |  `d`                    |                                 |
 | Copy | `y` | Should be in visual mode |
-| Paste | `p` | |
+| Paste | `p` | 
 
 ### 03 [`.vimrc`](https://github.com/jonwhittlestone/dotfiles/blob/jons-dotfiles-repo/.vimrc) 
 
