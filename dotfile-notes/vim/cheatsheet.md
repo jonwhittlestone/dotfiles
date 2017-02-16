@@ -19,6 +19,11 @@
 | Paste | `p` |
 | Move forward by word | `w` |
 | Move back by a word | `b` | 
+| Goto start of line | |
+| Goto end of line | |
+| Goto end of line and insert mode | |
+| Reindent everything nicely | |
+
 
 ### 03 [`.vimrc`](https://github.com/jonwhittlestone/dotfiles/blob/jons-dotfiles-repo/.vimrc) 
 
