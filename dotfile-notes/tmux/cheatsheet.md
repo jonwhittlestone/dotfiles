@@ -1,5 +1,33 @@
 # Tmux notes
 
+
+## Sessions
+
+    :new<CR>  new session
+    s  list sessions
+    $  name session
+
+## Windows (tabs)
+
+    c           new window
+    ,           name window
+    w           list windows
+    f           find window
+    &           kill window
+    .           move window - prompted for a new number
+    :movew<CR>  move window to the next unused number
+
+## Panes (splits)
+
+    %  horizontal split
+    "  vertical split
+    
+    o  swap panes
+    q  show pane numbers
+    x  kill pane
+    ⍽  space - toggle between layouts
+
+
 ### 01 Naming the session and basics
 
 | Operation | Keystroke | Comment 
@@ -12,8 +40,10 @@
 
 | Operation | Keystroke | Comment
 |--- |--- |---
+|View Current Key bindings | `CTRL+B` + `?` |
 | Change the status bar in [`~/.tmux.conf`](https://github.com/jonwhittlestone/dotfiles/blob/jons-dotfiles-repo/.tmux.conf) | `set-option -g status-bg blue` | |
 | Re-source tmux conf | `tmux source-file ~/.tmux.conf` | |
+
 
 ### 03 Sessions, windows and panes
 
