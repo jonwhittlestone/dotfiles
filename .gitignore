@@ -8,3 +8,5 @@
 
 !/.tmux.conf
 !/.vimrc
+
+!/dev.sh
