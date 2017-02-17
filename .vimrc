@@ -1,4 +1,3 @@
-
 set nocompatible              						"We want the latest Vim settings/options.
 set encoding=utf-8
 
@@ -77,7 +76,7 @@ nmap <C-e> :CtrlPMRUFiles<cr>
 nmap <C-t> <Plug>PeepOpen
 
 " Hardtime
-let g:hardtime_default_on = 1
+"let g:hardtime_default_on = 1
 
 " Powerline
 if has("gui_running")
