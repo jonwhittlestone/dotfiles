@@ -12,6 +12,7 @@ set clipboard=unnamed
 
 "-------------Visuals--------------"
 set number
+set relativenumber
 set linespace=15
 set t_CO=256
 set guioptions-=e
@@ -75,6 +76,8 @@ nmap <C-r> :CtrlPBufTag<cr>
 nmap <C-e> :CtrlPMRUFiles<cr>
 nmap <C-t> <Plug>PeepOpen
 
+" Hardtime
+let g:hardtime_default_on = 1
 
 " Powerline
 if has("gui_running")
