@@ -19,7 +19,7 @@
 | Paste | `p` |
 | Move 4 lines down | `4j` |
 | Move 4 lines up | `4k` |
-| Move to the next occurence of the word 'function' | `/function' |
+| Move to the next occurence of the word 'function' | `/function` |
 | Move forward by word | `w` |
 | Move back by a word | `b` | 
 | Goto start of line | |
