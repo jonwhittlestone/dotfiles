@@ -17,6 +17,9 @@
 |  Delete                         |  `d`                    |                                 |
 | Copy | `y` | Should be in visual mode |
 | Paste | `p` |
+| Move 4 lines down | `4j` |
+| Move 4 lines up | `4k` |
+| Move to the next occurence of the word 'function' | `/function<CR>` |
 | Move forward by word | `w` |
 | Move back by a word | `b` | 
 | Goto start of line | |
