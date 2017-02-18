@@ -22,6 +22,12 @@
 | Move to the next occurence of the word 'function' | `/function<CR>` |
 | Move forward by word | `w` |
 | Move back by a word | `b` | 
+| Move cursor to top of window | `H` | 'High' |
+| Move cursor to middle of window | `M` | |
+| Move cursor to bottom of window | `L` | Low |
+| Go to the top of file | `gg` |
+| Go forward one page | `^F` | CTRL + F |
+| Go back one page | `^B` | CTRL + B |
 | Goto start of line | |
 | Goto end of line | |
 | Goto end of line and insert mode | |
