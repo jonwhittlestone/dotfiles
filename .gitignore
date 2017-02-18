@@ -2,11 +2,17 @@
 !/.gitignore
 !/dotfile-notes
 !/dotfile-notes/*
+
 *.log
+*.swp
+
 !/.vim
 !/.vim/*
 !/.readme.md
+
 !/.tmux.conf
+!/.tmux/plugins
+
 !/.vimrc
 
 !/dev.sh
