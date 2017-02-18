@@ -5,7 +5,7 @@
 *.log
 !/.vim
 !/.vim/*
-
+!/.readme.md
 !/.tmux.conf
 !/.vimrc
 
