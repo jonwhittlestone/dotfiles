@@ -2,7 +2,7 @@
 !/.gitignore
 !/dotfile-notes
 !/dotfile-notes/*
-
+*.log
 !/.vim
 !/.vim/*
 
