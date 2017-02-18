@@ -16,6 +16,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'tpope/vim-obsession'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
