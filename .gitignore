@@ -14,5 +14,6 @@
 !/.tmux/plugins
 
 !/.vimrc
+!/.zshrc
 
 !/dev.sh
