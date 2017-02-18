@@ -8,7 +8,7 @@
 
 !/.vim
 !/.vim/*
-!/.readme.md
+!/readme.md
 
 !/.tmux.conf
 !/.tmux/plugins
