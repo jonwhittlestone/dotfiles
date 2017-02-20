@@ -28,6 +28,7 @@
 | Go to the top of file | `gg` |
 | Go forward one page | `^F` | CTRL + F |
 | Go back one page | `^B` | CTRL + B |
+| Insert after cursor | `a` | As opposed
 | Goto start of line | |
 | Goto end of line | |
 | Goto end of line and insert mode | |
