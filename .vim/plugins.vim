@@ -19,7 +19,8 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-obsession'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'stephpy/vim-php-cs-fixer'
 
-" All of your Plugins must be added before the following line
+ " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
