@@ -101,6 +101,7 @@ First install `ctags` with `brew install ctags`
 |  Operation 	                    |  Keystroke 	            |  Comment 	                          |
 |---	                            |---	                    |---	                                | 
 |  New tags file                  |  `$ ctags -R`           |  Tip: make this before installing libraries
+| New tags file with directories exluded | `ctags -R --exclude=.git --exclude=node_modules --exclude=build --exclude=vendor --exclude=releases --exclude=database/dumps --exclude=public` |
 Initialise by setting up a tags file and adding it to your gitignore 	                      |
 |  Find the method                |  `:tag report`          |   To find a method called `report()`|
 |  To delete inside parentheses   |  `d` + `i` + `(`        | Cursor must be inside parens  	    |
