@@ -10,7 +10,7 @@
 ### Coding workflow / environment
 
 * Use [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) to save entire tmux environment
-* Use ohmyzshell alias, `devenv` to restore the tmux env
+* [start.sh](start.sh) opens (saved) tmux env
 
 ### Maintenance
 

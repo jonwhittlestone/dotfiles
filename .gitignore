@@ -9,6 +9,7 @@
 !/.vim
 !/.vim/*
 !/readme.md
+!/start.sh
 
 !/.tmux.conf
 !/.tmux/plugins
