@@ -88,6 +88,9 @@ nmap <C-t> <Plug>PeepOpen
 " Hardtime
 "let g:hardtime_default_on = 1
 
+"airline
+let g:airline#extensions#tabline#enabled = 1
+
 " Powerline
 if has("gui_running")
 	   let s:uname = system("uname")
