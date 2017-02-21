@@ -20,6 +20,7 @@ Plugin 'tpope/vim-obsession'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'rking/ag.vim'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
