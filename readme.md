@@ -19,8 +19,7 @@ Ensure you manually whitelist files to be added in the `.gitignore`
 
 ### Todo.
 
-* Vim:Nerdtree, open in new tab 
-* Indenting in PHP isn't quite right - tabs vs. spaces
+* vim-airline doesn't work in Tmux
 * Vim: Quick site-wide searching and file opening
 * Look into 'learn' markdown vim-wiki with it's own Tmux window
 * Look into https://github.com/Yggdroot/indentLine
