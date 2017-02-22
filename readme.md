@@ -16,3 +16,10 @@
 ### Maintenance
 
 Ensure you manually whitelist files to be added in the `.gitignore`
+
+### Todo.
+
+* Vim:Nerdtree, open in new tab 
+* Indenting in PHP isn't quite right - tabs vs. spaces
+* Vim: Quick site-wide searching and file opening
+* Look into 'learn' markdown vim-wiki with it's own Tmux window

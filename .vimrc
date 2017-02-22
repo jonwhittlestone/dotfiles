@@ -4,7 +4,8 @@ set encoding=utf-8
 so ~/.vim/plugins.vim
 
 syntax enable
-colorscheme atom-dark-256
+"colorscheme atom-dark-256
+set term=screen-256color
 let python_highlight_all=1
 syntax on
 set clipboard=unnamed
