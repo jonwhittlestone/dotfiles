@@ -9,6 +9,7 @@ set term=screen-256color
 let python_highlight_all=1
 syntax on
 set clipboard=unnamed
+set autoindent
 
 "-------------Visuals--------------"
 set number
@@ -91,6 +92,8 @@ nmap <C-t> <Plug>PeepOpen
 
 "airline
 let g:airline#extensions#tabline#enabled = 1
+
+" NERDTree
 
 " Powerline
 if has("gui_running")
