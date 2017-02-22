@@ -36,7 +36,7 @@
 | Goto end of line | `$`|
 | Goto end of line and insert mode | |
 | Reindent everything nicely | |
-
+| Beautify json | `:%!python -m json.tool` |
 
 ### 03 [`.vimrc`](https://github.com/jonwhittlestone/dotfiles/blob/jons-dotfiles-repo/.vimrc) 
 
