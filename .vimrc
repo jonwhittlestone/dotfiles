@@ -95,7 +95,11 @@ let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 
 " NERDTre
- 
+let g:ctrlp_open_func = { 'files': 'CustomOpenFunc' }
+function! CustomOpenFunc(action, line)
+	    call call('ctrlp#acceptfile', [':t', a:line])
+endfunction
+
 " Powerline
 if has("gui_running")
 	   let s:uname = system("uname")
