@@ -20,6 +20,8 @@ ZSH_THEME="avit"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
+export PATH=/Users/jon/Library/Python/3.5/bin/:$PATH
+
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
@@ -84,3 +86,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=~/.composer/vendor/bin:$PATH
+export PATH=~/.local/bin:$PATH

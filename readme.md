@@ -22,7 +22,6 @@ Ensure you manually whitelist files to be added in the `.gitignore`
 
 ### Todo.
 
-* vim-airline doesn't work in Tmux/the status bar thing isn't showing by default, but does show when you open a horizontal split using CTRL+P
 * Auto-generating PHP-DOC for a PHP func
 * Vim: Quick site-wide searching and file opening
 * Look into 'learn' markdown vim-wiki with it's own Tmux window

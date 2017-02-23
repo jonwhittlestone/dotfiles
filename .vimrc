@@ -92,9 +92,10 @@ nmap <C-t> <Plug>PeepOpen
 
 "airline
 let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
 
-" NERDTree
-
+" NERDTre
+ 
 " Powerline
 if has("gui_running")
 	   let s:uname = system("uname")
