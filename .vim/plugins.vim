@@ -22,6 +22,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'rking/ag.vim'
 Plugin 'rizzatti/dash.vim'
+Plugin 'vimwiki/vimwiki'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required

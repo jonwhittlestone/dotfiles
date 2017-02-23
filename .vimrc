@@ -108,6 +108,8 @@ if has("gui_running")
 		endif
 endif
 
+let g:vimwiki_list = [{'path': '~/knowledge/', 'syntax': 'markdown', 'ext': '.md'}]
+  
 
 if has("gui_running")
 	   let s:uname = system("uname")
