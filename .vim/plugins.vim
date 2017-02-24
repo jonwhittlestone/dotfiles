@@ -23,6 +23,8 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'rking/ag.vim'
 Plugin 'rizzatti/dash.vim'
 Plugin 'vimwiki/vimwiki'
+Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'Yggdroot/indentLine'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required

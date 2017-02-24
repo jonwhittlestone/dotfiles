@@ -19,6 +19,10 @@ set t_CO=256
 set guioptions-=e
 
 
+set background=dark
+colorscheme hybrid_material
+let g:airline_theme = "hybrid"
+
 "-------------General Settings--------------"
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
 let mapleader = ',' 						    	"The default leader is \, but a comma is much better.
@@ -108,8 +112,11 @@ if has("gui_running")
 		endif
 endif
 
+" Vimwiki
 let g:vimwiki_list = [{'path': '~/knowledge/', 'syntax': 'markdown', 'ext': '.md'}]
-  
+ 
+"indentline
+let g:indentLine_color_term = 239
 
 if has("gui_running")
 	   let s:uname = system("uname")
