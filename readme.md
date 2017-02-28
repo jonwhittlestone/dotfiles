@@ -20,11 +20,3 @@
 
 Ensure you manually whitelist files to be added in the `.gitignore`
 
-### Todo.
-
-* Auto-generating PHP-DOC for a PHP func
-* Vim: Quick site-wide searching and file opening
-* Remap CTRL + SHIFT + ^ to be CTRL + ] - last edit point
-* Look into 'learn' markdown vim-wiki with it's own Tmux window
-* Look into Https://github.com/Yggdroot/indentLine
-* Look into https://github.com/jiangmiao/auto-pairs for auto closing braces etc

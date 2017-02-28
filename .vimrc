@@ -22,6 +22,13 @@ set guioptions-=e
 set background=dark
 colorscheme hybrid_material
 let g:airline_theme = "hybrid"
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" " when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" " On pressing tab, insert 4 spaces
+set expandtab
 
 "-------------General Settings--------------"
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
@@ -124,3 +131,5 @@ if has("gui_running")
 		            set guifont=Inconsolata\ for\ Powerline:h15
 			       endif
 		       endif
+
+    highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
