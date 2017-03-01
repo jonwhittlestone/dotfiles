@@ -1,6 +1,6 @@
 set nocompatible              						"We want the latest Vim settings/options.
 set encoding=utf-8
-
+filetype plugin indent on
 so ~/.vim/plugins.vim
 
 syntax enable
@@ -22,7 +22,6 @@ set guioptions-=e
 set background=dark
 colorscheme hybrid_material
 let g:airline_theme = "hybrid"
-filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
 " " when indenting with '>', use 4 spaces width
@@ -86,7 +85,20 @@ augroup autosourcing
 augroup END
 
 "-------------Plugins--------------"
+" Ultisnips
+" make YCM compatible with UltiSnips (using supertab)
+" let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+" let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" let g:SuperTabDefaultCompletionType = '<C-n>'
+"
+" " better key bindings for UltiSnipsExpandTrigger
+" let g:UltiSnipsExpandTrigger = "<tab>"
+" let g:UltiSnipsJumpForwardTrigger = "<tab>"
+" let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
+" PDV / PHP Documentor
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
 "/
 ""/ CtrlP
 "/
@@ -133,3 +145,4 @@ if has("gui_running")
 		       endif
 
     highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+

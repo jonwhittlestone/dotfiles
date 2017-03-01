@@ -10,7 +10,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/indentpython.vim'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
@@ -26,6 +26,9 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tobyS/pdv'
+Plugin 'tobyS/vmustache'
+Plugin 'SirVer/ultisnips'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
