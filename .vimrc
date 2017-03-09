@@ -1,4 +1,4 @@
-set nocompatible              						"We want the latest Vim settings/options.
+set nocompatible              						                                                        "We want the latest Vim settings/options.
 set encoding=utf-8
 filetype plugin indent on
 so ~/.vim/plugins.vim
@@ -9,8 +9,11 @@ set term=screen-256color
 let python_highlight_all=1
 syntax on
 set clipboard=unnamed
-set autoindent
 
+set autoindent
+set foldmethod=indent
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab                                                    " 2 space indenting for YAML"
 "-------------Visuals--------------"
 set number
 set relativenumber

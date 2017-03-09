@@ -19,8 +19,8 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-obsession'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ramele/agrep'
 Plugin 'stephpy/vim-php-cs-fixer'
-Plugin 'rking/ag.vim'
 Plugin 'rizzatti/dash.vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'kristijanhusak/vim-hybrid-material'
@@ -30,6 +30,7 @@ Plugin 'tobyS/pdv'
 Plugin 'tobyS/vmustache'
 Plugin 'SirVer/ultisnips'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
