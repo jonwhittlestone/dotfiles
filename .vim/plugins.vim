@@ -31,6 +31,7 @@ Plugin 'tobyS/vmustache'
 Plugin 'SirVer/ultisnips'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'scrooloose/nerdcommenter'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required
