@@ -11,7 +11,7 @@ syntax on
 set clipboard=unnamed
 
 set autoindent
-set foldmethod=indent
+"set foldmethod=indent
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab                                                    " 2 space indenting for YAML"
 "-------------Visuals--------------"

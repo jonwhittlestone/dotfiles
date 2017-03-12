@@ -92,3 +92,13 @@ export PATH=~/.local/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+function pip-save() {
+    for pkg in $@; do
+        pip install "$pkg" && {
+            name="$(pip show "$pkg" | grep Name: | awk '{print $2}')";
+            version="$(pip show "$pkg" | grep Version: | awk '{print $2}')";
+            echo "${name}==${version}" >> requirements.txt;
+        }
+    done
+}
