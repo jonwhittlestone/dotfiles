@@ -69,6 +69,8 @@ imap <right> <nop>
 
 
 "-------------Mappings--------------"
+" todo review / tasks with Agrep
+nmap <Leader>t :Agrep --exclude-dir={./vendor,./node_modules,./.idea,./public,./storage} --exclude=*.sql -i -r -F "todo" .<cr><C-J>
 
 "Make it easy to edit the Vimrc file.
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
