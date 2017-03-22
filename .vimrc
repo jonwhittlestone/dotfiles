@@ -2,7 +2,7 @@ set nocompatible              						                                            
 set encoding=utf-8
 filetype plugin indent on
 so ~/.vim/plugins.vim
-
+set noswapfile
 syntax enable
 "colorscheme atom-dark-256
 set term=screen-256color
@@ -95,7 +95,8 @@ augroup END
 " let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 " let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 " let g:SuperTabDefaultCompletionType = '<C-n>'
-"
+
+
 " " better key bindings for UltiSnipsExpandTrigger
 " let g:UltiSnipsExpandTrigger = "<tab>"
 " let g:UltiSnipsJumpForwardTrigger = "<tab>"

@@ -87,7 +87,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias pip="/usr/bin/pip3"
+
+# IVXS Aliases
+
 export PATH=~/.composer/vendor/bin:$PATH
 export PATH=~/.local/bin:$PATH
 
