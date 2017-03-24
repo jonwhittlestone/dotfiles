@@ -54,7 +54,7 @@ nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
-" Disable Arrow keys in Escape mode
+"Disable Arrow keys in Escape mode
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
@@ -69,6 +69,9 @@ imap <right> <nop>
 
 
 "-------------Mappings--------------"
+" open new tab with NERDTree
+nmap <Leader>n :tabe<CR>:NERDTreeToggle<cr>
+
 " todo review / tasks with Agrep
 nmap <Leader>t :Agrep --exclude-dir={./vendor,./node_modules,./.idea,./public,./storage} --exclude=*.sql -i -r -F "todo" .<cr><C-J>
 
@@ -105,10 +108,10 @@ augroup END
 " PDV / PHP Documentor
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
+
 "/
 ""/ CtrlP
 "/
-
 let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 "
