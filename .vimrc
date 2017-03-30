@@ -69,8 +69,14 @@ imap <right> <nop>
 
 
 "-------------Mappings--------------"
+" fold a function
+nmap <Leader>f /{<cr>v%zf,<space>
+
 " open new tab with NERDTree
-nmap <Leader>n :tabe<CR>:NERDTreeToggle<cr>
+nmap <Leader>n :tabe<cr>:NERDTreeToggle<cr>
+
+" open a new tab and close all the others
+nmap <Leader>no :tabe<cr>:Bonly<cr>gt<cr>
 
 " todo review / tasks with Agrep
 nmap <Leader>t :Agrep --exclude-dir={./vendor,./node_modules,./.idea,./public,./storage} --exclude=*.sql -i -r -F "todo" .<cr><C-J>
