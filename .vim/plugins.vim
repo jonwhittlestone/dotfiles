@@ -33,6 +33,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'benmills/vimux'
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required

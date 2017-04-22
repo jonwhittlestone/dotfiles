@@ -69,6 +69,12 @@ imap <right> <nop>
 
 
 "-------------Mappings--------------"
+" Inspect runner pane
+map <Leader>vi :VimuxInspectRunner<CR>
+"
+" run command with vimux pane
+nmap <Leader>c :VimuxPromptCommand<cr>
+
 " fold a function
 nmap <Leader>f /{<cr>v%zf,<space>
 
@@ -77,6 +83,9 @@ nmap <Leader>n :tabe<cr>:NERDTreeToggle<cr>
 
 " open a new tab and close all the others
 nmap <Leader>no :tabe<cr>:Bonly<cr>gt<cr>
+
+" open a new tab and close all the others
+nmap <Leader>o :Bonly<cr>gt<cr>
 
 " todo review / tasks with Agrep
 nmap <Leader>t :Agrep --exclude-dir={./vendor,./node_modules,./.idea,./public,./storage} --exclude=*.sql -i -r -F "todo" .<cr><C-J>

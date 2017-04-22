@@ -1,4 +1,8 @@
-/*
+!/*
+*.swp
+tags
+releases/
+database/dumps/*
 !/.gitignore
 !/dotfile-notes
 !/dotfile-notes/*
@@ -18,3 +22,4 @@
 !/.zshrc
 
 !/dev.sh
+/*
