@@ -89,6 +89,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # IVXS Aliases
+alias ep="cd ~/code/ivxs/tm/ep"
+alias cc="cd ~/code/ivxs/tm/cc"
+alias eb="cd ~/code/ivxs/tm/eb"
+
+alias siteep="open http://ep.ivxs.uk"
+alias sitecc="open http://cc.ivxs.uk"
+alias siteeb="open http://eb.ivxs.uk"
+alias sitedocker="open http://localhost:8000"
 
 export PATH=~/.composer/vendor/bin:$PATH
 export PATH=~/.local/bin:$PATH
@@ -107,3 +115,4 @@ function pip-save() {
 }
 alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+export HISTTIMEFORMAT="%d/%m/%y %T "
