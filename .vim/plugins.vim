@@ -15,6 +15,7 @@ Plugin 'tpope/vim-obsession'        " Vim session stuff
 Plugin 'ramele/agrep'               " Asynchronous grep plugin
 Plugin 'airblade/vim-gitgutter'     " gitgutter
 Plugin 'Xuyuanp/nerdtree-git-plugin' " show git status in nerdtree
+Plugin 'terryma/vim-multiple-cursors'   " err multiple cursors
 Plugin 'tpope/vim-vinegar'
 Plugin 'vim-scripts/indentpython.vim'
 "Bundle 'Valloric/YouCompleteMe'
