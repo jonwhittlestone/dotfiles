@@ -17,7 +17,7 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab                        
 "-------------Visuals--------------"
 set number
 set relativenumber
-set linespace=15
+set linespace=19
 set t_CO=256
 set guioptions-=e
 
@@ -75,8 +75,11 @@ map <Leader>vi :VimuxInspectRunner<CR>
 " run command with vimux pane
 nmap <Leader>c :VimuxPromptCommand<cr>
 
-" fold a function
+" fold a C-style function
 nmap <Leader>f /{<cr>v%zf,<space>
+
+" python debug. Add ipdb to next line and and save
+nmap <Leader>db $a<cr>import ipdb; ipdb.set_trace()<C-c>:w<cr>
 
 " open new tab with NERDTree
 nmap <Leader>n :tabe<cr>:NERDTreeToggle<cr>
@@ -169,4 +172,7 @@ if has("gui_running")
 		       endif
 
     highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
+" Python Linting with Synastic
+let g:syntastic_python_checkers = ['flake8']
 

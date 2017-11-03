@@ -35,6 +35,11 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'benmills/vimux'
+Plugin 'tpope/vim-surround'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'tmhedberg/SimpylFold'           "Python Folding with zc and zo
+Plugin 'markgandolfo/nerdtree-fetch.vim'    "Pull into Nerdtree with wget
+
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required

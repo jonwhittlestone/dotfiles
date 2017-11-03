@@ -117,3 +117,15 @@ alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.p
 alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 export HISTTIMEFORMAT="%d/%m/%y %T "
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# run watched tests with watchman: https://goo.gl/uTSOfv
+function pw {
+    run="clear && printf '\e[3J' && vendor/bin/phpunit"
+    [[ -n $@  ]] && args=$@ || args="tests"
+
+    eval "$run $args"
+    watchman-make \
+        -p 'src/**/*.php' 'tests/**/*.php' 'app/tests/Import/**/*.php' \
+        --make=$run \
+        -t "$args" 
+}
