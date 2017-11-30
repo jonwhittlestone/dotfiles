@@ -89,17 +89,28 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # IVXS Aliases
-alias ep="cd ~/code/ivxs/tm/ep"
-alias cc="cd ~/code/ivxs/tm/cc"
-alias eb="cd ~/code/ivxs/tm/eb"
 
-alias siteep="open http://ep.ivxs.uk"
-alias sitecc="open http://cc.ivxs.uk"
-alias siteeb="open http://eb.ivxs.uk"
-alias sitedocker="open http://localhost:8000"
+alias sen="cd ~/code/ivxs/sentinel-core; source venv/bin/activate"
+alias sendj="docker exec -it sentinelcore_sentinel-api-gunicorn_1 /bin/bash"
+
+alias tunsrcep="ssh -D 127.0.0.1:8022 jon@35.176.103.101"
+alias ecsep='ssh -o ProxyCommand="nc -X 5 -x localhost:8022 %h %p" -i ~/.ssh/id_rsa jon@10.30.85.166'
+
+alias tunsrceb="ssh -D 127.0.0.1:8022 jon@34.253.47.42"
+alias ecseb='ssh -o ProxyCommand="nc -X 5 -x localhost:8022 %h %p" -i ~/.ssh/id_rsa jon@10.30.15.69'
+
+alias tunsrcwi="ssh -D 127.0.0.1:8022 jon@34.241.121.233"
+alias ecswi='ssh -o ProxyCommand="nc -X 5 -x localhost:8022 %h %p" -i ~/.ssh/id_rsa jon@10.30.75.203'
+
+alias tunsrcepfx="ssh -D 127.0.0.1:8022 jon@52.56.105.5"
+alias ecsepfx='ssh -o ProxyCommand="nc -X 5 -x localhost:8022 %h %p" -i ~/.ssh/id_rsa jon@10.30.19.127'
+
+alias tunsrcdemo2="ssh -D 127.0.0.1:8022 jon@52.215.58.206"
+alias ecsdemo2='ssh -o ProxyCommand="nc -X 5 -x localhost:8022 %h %p" -i ~/.ssh/id_rsa jon@10.30.156.152'
 
 export PATH=~/.composer/vendor/bin:$PATH
 export PATH=~/.local/bin:$PATH
+. /usr/local/bin/z/z.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

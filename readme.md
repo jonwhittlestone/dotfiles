@@ -12,6 +12,8 @@
 
 * Use [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) to save entire tmux environment
 * [start.sh](start.sh) opens (saved) tmux env
+* Shortcut to open files in Sublime with `subl .`
+    $ sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 ### Vim Plugin Features
 * Todo

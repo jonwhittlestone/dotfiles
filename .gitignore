@@ -1,5 +1,15 @@
-!/*
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.zshrc
+!readme.md
+!.vim/
+!.tmux/
+!start.sh
 *.swp
+.DS_Store
 tags
 releases/
 database/dumps/*
@@ -22,4 +32,3 @@ database/dumps/*
 !/.zshrc
 
 !/dev.sh
-/*
