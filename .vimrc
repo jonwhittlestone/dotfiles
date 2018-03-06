@@ -3,7 +3,7 @@ set encoding=utf-8
 filetype plugin indent on
 so ~/.vim/plugins.vim
 set noswapfile
-syntax enable
+"syntax enable
 "colorscheme atom-dark-256
 set term=screen-256color
 let python_highlight_all=1
@@ -84,6 +84,9 @@ nmap <Leader>db $a<cr>import ipdb; ipdb.set_trace()<C-c>:w<cr>
 " open new tab with NERDTree
 nmap <Leader>n :tabe<cr>:NERDTreeToggle<cr>
 
+" open new tab, and open recent files
+nmap <Leader>e :tabe<cr><C-E>
+
 " open a new tab and close all the others
 nmap <Leader>no :tabe<cr>:Bonly<cr>gt<cr>
 
@@ -101,6 +104,9 @@ nmap <Leader><space> :nohlsearch<cr>
 
 "Make NERDTree easier to toggle
 nmap <Leader>1 :NERDTreeToggle<cr>
+
+"Hack for Python syntax highlighting ::cry::
+nmap <Leader>s :syntax on <cr>
 
 "-------------Auto-Commands--------------"
 

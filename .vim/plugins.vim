@@ -8,7 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'       " Plugin manager
 Plugin 'scrooloose/nerdtree'        " File drawer / sidebar thing
 Plugin 'ctrlpvim/ctrlp.vim'         " Open new files with ctrl-P
-Plugin 'scrooloose/syntastic'       " Linting
+Plugin 'vim-syntastic/syntastic'     
 Plugin 'nvie/vim-flake8'            " Runs the open file through Flake 8 static syntax checking
 Plugin 'jnurmine/Zenburn'           " Low-contast colour scheme
 Plugin 'tpope/vim-obsession'        " Vim session stuff
@@ -17,6 +17,7 @@ Plugin 'airblade/vim-gitgutter'     " gitgutter
 Plugin 'Xuyuanp/nerdtree-git-plugin' " show git status in nerdtree
 Plugin 'terryma/vim-multiple-cursors'   " err multiple cursors
 Plugin 'tpope/vim-vinegar'
+Plugin 'vim-python/python-syntax'
 Plugin 'vim-scripts/indentpython.vim'
 "Bundle 'Valloric/YouCompleteMe'
 Plugin 'altercation/vim-colors-solarized'
@@ -30,7 +31,7 @@ Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tobyS/pdv'
 Plugin 'tobyS/vmustache'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
