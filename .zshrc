@@ -126,4 +126,3 @@ function pw {
         --make=$run \
         -t "$args" 
 }
-export PATH="/usr/local/sbin:$PATH"

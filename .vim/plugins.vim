@@ -8,8 +8,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'       " Plugin manager
 Plugin 'scrooloose/nerdtree'        " File drawer / sidebar thing
 Plugin 'ctrlpvim/ctrlp.vim'         " Open new files with ctrl-P
-Plugin 'vim-syntastic/syntastic'     
-Plugin 'nvie/vim-flake8'            " Runs the open file through Flake 8 static syntax checking
 Plugin 'jnurmine/Zenburn'           " Low-contast colour scheme
 Plugin 'tpope/vim-obsession'        " Vim session stuff
 Plugin 'ramele/agrep'               " Asynchronous grep plugin
@@ -17,7 +15,6 @@ Plugin 'airblade/vim-gitgutter'     " gitgutter
 Plugin 'Xuyuanp/nerdtree-git-plugin' " show git status in nerdtree
 Plugin 'terryma/vim-multiple-cursors'   " err multiple cursors
 Plugin 'tpope/vim-vinegar'
-Plugin 'vim-python/python-syntax'
 Plugin 'vim-scripts/indentpython.vim'
 "Bundle 'Valloric/YouCompleteMe'
 Plugin 'altercation/vim-colors-solarized'
@@ -38,9 +35,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-surround'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'tmhedberg/SimpylFold'           "Python Folding with zc and zo
+Plugin 'tmhedberg/SimpylFold'               "Python Folding with zc and zo
 Plugin 'markgandolfo/nerdtree-fetch.vim'    "Pull into Nerdtree with wget
-
+Plugin 'vim-scripts/matchit.zip'            "Syntax Highlighting, specifically Volt
+Plugin 'jyyan/vim-volt-syntax'              "Volt Syntax Highlighting
+Plugin 'nvie/vim-flake8'            " Runs the open file through Flake 8 static syntax checking
+Plugin 'vim-syntastic/syntastic'     
 
  " All of your Plugins must be added before the following line
 call vundle#end()            " required

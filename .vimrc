@@ -108,6 +108,9 @@ nmap <Leader>1 :NERDTreeToggle<cr>
 "Hack for Python syntax highlighting ::cry::
 nmap <Leader>s :syntax on <cr>
 
+"Search in a new tab"
+nmap <Leader>g :tabe<cr>:Agrep -irF '
+
 "-------------Auto-Commands--------------"
 
 "Automatically source the Vimrc file on save.
@@ -181,4 +184,15 @@ if has("gui_running")
 
 " Python Linting with Synastic
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_yaml_checkers = ['yamllint']
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" Git add, commit and push with vim-fugitive
+nnoremap <leader>gv :Gwrite<CR>:Gcommit -m WIP<CR>:Gpush<cr><cr>:e!<cr>
