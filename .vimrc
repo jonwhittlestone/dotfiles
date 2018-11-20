@@ -10,6 +10,8 @@ let python_highlight_all=1
 syntax on
 set clipboard=unnamed
 
+set tags=tags
+
 set autoindent
 "set foldmethod=indent
 
@@ -17,7 +19,7 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab                        
 "-------------Visuals--------------"
 set number
 set relativenumber
-set linespace=19
+set linespace=20
 set t_CO=256
 set guioptions-=e
 
@@ -41,6 +43,9 @@ let mapleader = ',' 						    	"The default leader is \, but a comma is much bet
 set hlsearch
 set incsearch
 
+
+"----------Show Quotes in JSON-----------"
+set conceallevel=0
 
 
 "-------Split Managemnent------"
@@ -110,6 +115,9 @@ nmap <Leader>s :syntax on <cr>
 
 "Search in a new tab"
 nmap <Leader>g :tabe<cr>:Agrep -irF '
+
+"Ctrl P look for symbols/tags
+nmap <c-R> :CtrlPBufTag
 
 "-------------Auto-Commands--------------"
 
