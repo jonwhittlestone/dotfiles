@@ -1,0 +1,14 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 1,
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "explorer.confirmDelete": false,
+    "sync.gist": "ba776d8231cc2e55544539b81d3fe5e3",
+    "git.enableSmartCommit": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "terminal.integrated.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "workbench.activityBar.visible": false,
+    "workbench.sideBar.location": "left"
+}

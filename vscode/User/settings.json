@@ -1,0 +1,25 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": -0.3,
+  "editor.minimap.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "explorer.confirmDelete": false,
+  "sync.gist": "f85225648e4a48fe9931d54336f80539",
+  "terminal.integrated.lineHeight": 1.2,
+  "editor.lineHeight": 30,
+  "explorer.confirmDragAndDrop": false,
+  "editor.formatOnSave": true,
+  "terminal.integrated.rendererType": "dom",
+  "files.associations": {
+    "*.inc": "php"
+  },
+  "python.formatting.provider": "autopep8",
+  "vim.useSystemClipboard": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-f>": false,
+    "<C-S-E>": false
+  },
+  "workbench.colorTheme": "Material Theme Darker"
+}
