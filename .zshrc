@@ -1,28 +1,56 @@
+source /home/jon/.antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+ antigen use oh-my-zsh
+#
+# # Bundles from the default repo (robbyrussell's oh-my-zsh).
+ antigen bundle git
+ antigen bundle heroku
+ antigen bundle pip
+ antigen bundle lein
+ antigen bundle command-not-found
+ antigen bundle lukechilds/zsh-nvm
+#
+# # Syntax highlighting bundle.
+ antigen bundle zsh-users/zsh-syntax-highlighting
+#
+# # Load the theme.
+ antigen theme robbyrussell
+#
+# # Tell Antigen that you're done.
+ antigen apply
+
+
+
 # If you come from bash you might have to change your $PATH.
- export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jon/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME="robbyrussell"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster"  )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
-#export PATH=~/.local/bin:$PATH
-
 # Uncomment the following line to change how often to auto-update (in days).
-
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
@@ -44,19 +72,24 @@ ZSH_THEME="avit"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -68,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
+# if [[ -n $SSH_CONNECTION  ]]; then
 #   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
@@ -88,41 +121,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#export ZSH=/Users/jon/aliases.sh
-# Personal dev aliases
-alias play="cd ~/code/playground"
-alias fillmein="cd ~/code/playground/BE/TweetDigestNotifier/fillmein; source venv/bin/activate"
+alias kraken='eval "gitkraken --new-window -p `pwd` -l /dev/null >/dev/null 2>&1 &"'
 
-export PATH=~/.composer/vendor/bin:$PATH
-export PATH=~/.local/bin:$PATH
-. /usr/local/bin/z/z.sh
-export PATH=/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/python:$PATH:~/bin
+export NVM_DIR="$HOME/.nvm"        
+[ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm                                                                           
+[ -s "$NVM_DIR/bash_completion"  ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-function pip-save() {
-    for pkg in $@; do
-        pip install "$pkg" && {
-            name="$(pip show "$pkg" | grep Name: | awk '{print $2}')";
-            version="$(pip show "$pkg" | grep Version: | awk '{print $2}')";
-            echo "${name}==${version}" >> requirements.txt;
-        }
-    done
-}
-alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-export HISTTIMEFORMAT="%d/%m/%y %T "
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-
-# run watched tests with watchman: https://goo.gl/uTSOfv
-function pw {
-    run="clear && printf '\e[3J' && vendor/bin/phpunit"
-    [[ -n $@  ]] && args=$@ || args="tests"
-
-    eval "$run $args"
-    watchman-make \
-        -p 'src/**/*.php' 'tests/**/*.php' 'app/tests/Import/**/*.php' \
-        --make=$run \
-        -t "$args" 
-}
+# Install Ruby Gems to ~/gems
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
+export PATH="$PATH:/opt/mssql-tools/bin"
