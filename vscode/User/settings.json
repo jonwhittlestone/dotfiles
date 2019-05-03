@@ -1,14 +1,15 @@
 {
   "workbench.startupEditor": "newUntitledFile",
-  "window.zoomLevel": -0.3,
+  "window.zoomLevel": 0,
   "editor.minimap.enabled": false,
   "window.menuBarVisibility": "toggle",
   "explorer.confirmDelete": false,
-  "sync.gist": "f85225648e4a48fe9931d54336f80539",
+  "sync.gist": "72053d57e04f09d9cfc73ec1b00f68dd",
   "terminal.integrated.lineHeight": 1.2,
   "editor.lineHeight": 30,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "explorer.confirmDragAndDrop": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "terminal.integrated.rendererType": "dom",
   "files.associations": {
     "*.inc": "php"
@@ -21,5 +22,11 @@
     "<C-f>": false,
     "<C-S-E>": false
   },
-  "workbench.colorTheme": "Material Theme Darker"
+  "workbench.colorTheme": "Material Theme Darker",
+  "atlascode.jira.workingSite": {
+    "baseUrlSuffix": "atlassian.net"
+  },
+  "yaml.schemas": {
+    "file:///home/jon/.vscode/extensions/atlassian.atlascode-1.2.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  }
 }
